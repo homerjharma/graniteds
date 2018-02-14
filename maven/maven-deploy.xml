@@ -101,66 +101,6 @@
     </artifact:install>
     <artifact:install pomRefId="granite-core" file="../build/granite.jar">
       <attach file="../build/sources/java/granite-sources.jar" classifier="sources"/>
-      <attach file="../build/docs/javadoc/granite-javadoc.jar" classifier="javadoc"/>
-    </artifact:install>
-    <artifact:install pomRefId="granite-hibernate" file="../build/granite-hibernate.jar">
-      <attach file="../build/sources/java/granite-hibernate-sources.jar" classifier="sources"/>
-      <attach file="../build/docs/javadoc/granite-hibernate-javadoc.jar" classifier="javadoc"/>
-    </artifact:install>
-    <artifact:install pomRefId="granite-hibernate4" file="../build/granite-hibernate4.jar">
-      <attach file="../build/sources/java/granite-hibernate4-sources.jar" classifier="sources"/>
-      <attach file="../build/docs/javadoc/granite-hibernate4-javadoc.jar" classifier="javadoc"/>
-    </artifact:install>
-    <artifact:install pomRefId="granite-datanucleus" file="../build/granite-datanucleus.jar">
-      <attach file="../build/sources/java/granite-datanucleus-sources.jar" classifier="sources"/>
-      <attach file="../build/docs/javadoc/granite-datanucleus-javadoc.jar" classifier="javadoc"/>
-    </artifact:install>
-    <artifact:install pomRefId="granite-toplink" file="../build/granite-toplink.jar">
-      <attach file="../build/sources/java/granite-toplink-sources.jar" classifier="sources"/>
-      <attach file="../build/docs/javadoc/granite-toplink-javadoc.jar" classifier="javadoc"/>
-    </artifact:install>
-    <artifact:install pomRefId="granite-eclipselink" file="../build/granite-eclipselink.jar">
-      <attach file="../build/sources/java/granite-eclipselink-sources.jar" classifier="sources"/>
-      <attach file="../build/docs/javadoc/granite-eclipselink-javadoc.jar" classifier="javadoc"/>
-    </artifact:install>
-    <artifact:install pomRefId="granite-openjpa" file="../build/granite-openjpa.jar">
-      <attach file="../build/sources/java/granite-openjpa-sources.jar" classifier="sources"/>
-      <attach file="../build/docs/javadoc/granite-openjpa-javadoc.jar" classifier="javadoc"/>
-    </artifact:install>
-    <artifact:install pomRefId="granite-beanvalidation" file="../build/granite-beanvalidation.jar">
-      <attach file="../build/sources/java/granite-beanvalidation-sources.jar" classifier="sources"/>
-      <attach file="../build/docs/javadoc/granite-beanvalidation-javadoc.jar" classifier="javadoc"/>
-    </artifact:install>
-    <artifact:install pomRefId="granite-spring" file="../build/granite-spring.jar">
-      <attach file="../build/sources/java/granite-spring-sources.jar" classifier="sources"/>
-      <attach file="../build/docs/javadoc/granite-spring-javadoc.jar" classifier="javadoc"/>
-    </artifact:install>
-    <artifact:install pomRefId="granite-seam" file="../build/granite-seam.jar">
-      <attach file="../build/sources/java/granite-seam-sources.jar" classifier="sources"/>
-      <attach file="../build/docs/javadoc/granite-seam-javadoc.jar" classifier="javadoc"/>
-    </artifact:install>
-    <artifact:install pomRefId="granite-seam21" file="../build/granite-seam21.jar">
-      <attach file="../build/sources/java/granite-seam21-sources.jar" classifier="sources"/>
-      <attach file="../build/docs/javadoc/granite-seam21-javadoc.jar" classifier="javadoc"/>
-    </artifact:install>
-    <artifact:install pomRefId="granite-cdi" file="../build/granite-cdi.jar">
-      <attach file="../build/sources/java/granite-cdi-sources.jar" classifier="sources"/>
-      <attach file="../build/docs/javadoc/granite-cdi-javadoc.jar" classifier="javadoc"/>
-    </artifact:install>
-    <artifact:install pomRefId="granite-guice" file="../build/granite-guice.jar">
-      <attach file="../build/sources/java/granite-guice-sources.jar" classifier="sources"/>
-      <attach file="../build/docs/javadoc/granite-guice-javadoc.jar" classifier="javadoc"/>
-    </artifact:install>
-
-    <artifact:install pomRefId="granite-root-swc"/>
-    <artifact:install pomRefId="granite-essentials-swc" file="../build/granite-essentials.swc">
-      <attach file="../build/sources/as3/granite-essentials-sources.jar" classifier="sources"/>
-    </artifact:install>
-    <artifact:install pomRefId="granite-swc" file="../build/granite.swc">
-      <attach file="../build/sources/as3/granite-sources.jar" classifier="sources"/>
-    </artifact:install>
-    <artifact:install pomRefId="granite-flex45-swc" file="../build/granite-flex45.swc">
-      <attach file="../build/sources/as3/granite-sources.jar" classifier="sources"/>
     </artifact:install>
   </target>
 
