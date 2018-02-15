@@ -364,7 +364,7 @@
     <!--
      ! Build GDS maven extra jars (sources & javadoc).
      !-->
-	<target name="build.maven.extra" depends="build.maven.source.jar,build.maven.javadoc.jar"/>
+	<target name="build.maven.extra" depends="build.maven.source.jar"/>
 	
     <!--
      ! Build GDS maven source jars.
@@ -381,100 +381,6 @@
 	        <include name="**"/> 
 	      </fileset> 
 	      <fileset dir="tide"> 
-	        <include name="**"/> 
-	      </fileset> 
-	    </jar> 
-	    <jar destfile="build/sources/java/granite-hibernate-sources.jar"> 
-	      <fileset dir="hibernate"> 
-	        <include name="**"/> 
-	      </fileset> 
-	    </jar> 
-        <jar destfile="build/sources/java/granite-hibernate4-sources.jar"> 
-          <fileset dir="hibernate4"> 
-            <include name="**"/> 
-          </fileset> 
-        </jar> 
-	    <jar destfile="build/sources/java/granite-toplink-sources.jar">
-	      <fileset dir="toplink"> 
-	        <include name="**"/> 
-	      </fileset> 
-	    </jar> 
-	    <jar destfile="build/sources/java/granite-eclipselink-sources.jar"> 
-	      <fileset dir="eclipselink"> 
-	        <include name="**"/> 
-	      </fileset> 
-	    </jar> 
-	    <jar destfile="build/sources/java/granite-openjpa-sources.jar"> 
-	      <fileset dir="openjpa"> 
-	        <include name="**"/> 
-	      </fileset> 
-	    </jar> 
-	    <jar destfile="build/sources/java/granite-datanucleus-sources.jar"> 
-	      <fileset dir="datanucleus"> 
-	        <include name="**"/> 
-	      </fileset> 
-	    </jar> 
-	    <jar destfile="build/sources/java/granite-beanvalidation-sources.jar"> 
-	      <fileset dir="beanvalidation"> 
-	        <include name="**"/> 
-	      </fileset> 
-	    </jar> 
-	    <jar destfile="build/sources/java/granite-spring-sources.jar"> 
-	      <fileset dir="spring"> 
-	        <include name="**"/> 
-	      </fileset> 
-	    </jar> 
-	    <jar destfile="build/sources/java/granite-seam-sources.jar"> 
-	      <fileset dir="seam"> 
-	        <include name="**"/> 
-	      </fileset> 
-	    </jar> 
-	    <jar destfile="build/sources/java/granite-seam21-sources.jar"> 
-	      <fileset dir="seam"> 
-	        <include name="**"/> 
-	        <exclude name="org/granite/tide/seam/SeamServiceContext.java"/> 
-	        <exclude name="org/granite/tide/seam/TideMessages.java"/> 
-	        <exclude name="**/*.properties"/> 
-	      </fileset> 
-	      <fileset dir="seam21"> 
-	        <include name="**"/> 
-	      </fileset> 
-	    </jar> 
-	    <jar destfile="build/sources/java/granite-cdi-sources.jar"> 
-	      <fileset dir="cdi"> 
-	        <include name="**"/> 
-	      </fileset> 
-	    </jar> 
-	    <jar destfile="build/sources/java/granite-guice-sources.jar"> 
-	      <fileset dir="guice"> 
-	        <include name="**"/> 
-	      </fileset> 
-	    </jar> 
-
-	    <jar destfile="build/sources/java/granite-generator-share-sources.jar"> 
-	      <fileset dir="core"> 
-	        <include name="org/granite/util/ClassUtil.java"/> 
-	        <include name="org/granite/util/URIUtil.java"/> 
-	        <include name="org/granite/messaging/amf/io/util/Property.java"/> 
-	        <include name="org/granite/messaging/amf/io/util/externalizer/Externalizer.java"/> 
-	        <include name="org/granite/messaging/amf/io/util/externalizer/annotation/**.java"/> 
-	      </fileset> 
-          <fileset dir="tide">
-            <include name="org/granite/tide/annotations/**.java"/>
-            <include name="org/granite/tide/data/Lazy.java"/>
-          </fileset>
-	    </jar> 
-
-	    <!-- Build flex sources --> 
-	    <mkdir dir="build/sources/as3"/> 
-	    <jar destfile="build/sources/as3/granite-essentials-sources.jar"> 
-	      <fileset dir="as3/essentials"> 
-	        <include name="**"/> 
-	      </fileset> 
-	    </jar> 
-
-	    <jar destfile="build/sources/as3/granite-sources.jar"> 
-	      <fileset dir="as3/framework"> 
 	        <include name="**"/> 
 	      </fileset> 
 	    </jar> 
@@ -741,89 +647,6 @@
             </fileset>
             <fileset dir="classes/tide">
                 <include name="**"/>
-            </fileset>
-        </jar>
-        <jar destfile="build/granite-hibernate.jar" manifest="build/META-INF/MANIFEST.MF">
-            <fileset dir="classes/hibernate">
-                <include name="**"/>
-            </fileset>
-        </jar>
-        <jar destfile="build/granite-hibernate4.jar" manifest="build/META-INF/MANIFEST.MF">
-            <fileset dir="classes/hibernate4">
-                <include name="**"/>
-            </fileset>
-        </jar>
-        <jar destfile="build/granite-toplink.jar" manifest="build/META-INF/MANIFEST.MF">
-            <fileset dir="classes/toplink">
-                <include name="**"/>
-            </fileset>
-        </jar>
-        <jar destfile="build/granite-eclipselink.jar" manifest="build/META-INF/MANIFEST.MF">
-            <fileset dir="classes/eclipselink">
-                <include name="**"/>
-            </fileset>
-        </jar>
-        <jar destfile="build/granite-openjpa.jar" manifest="build/META-INF/MANIFEST.MF">
-            <fileset dir="classes/openjpa">
-                <include name="**"/>
-            </fileset>
-        </jar>
-        <jar destfile="build/granite-datanucleus.jar" manifest="build/META-INF/MANIFEST.MF">
-            <fileset dir="classes/datanucleus">
-                <include name="**"/>
-            </fileset>
-        </jar>
-        <jar destfile="build/granite-spring.jar" manifest="build/META-INF/MANIFEST.MF">
-            <fileset dir="classes/spring">
-                <include name="**"/>
-            </fileset>
-        </jar>
-        <jar destfile="build/granite-seam.jar" manifest="build/META-INF/MANIFEST.MF">
-            <fileset dir="classes/seam">
-                <include name="**"/>
-            </fileset>
-        </jar>
-        <jar destfile="build/granite-seam21.jar" manifest="build/META-INF/MANIFEST.MF">
-            <fileset dir="classes/seam">
-                <include name="**"/>
-	    		<exclude name="org/granite/tide/seam/SeamServiceContext.class"/>
-	    		<exclude name="org/granite/tide/seam/TideMessages.class"/>
-            	<exclude name="**/*.properties"/>
-            </fileset>
-            <fileset dir="classes/seam21">
-                <include name="**"/>
-            </fileset>
-        </jar>
-        <jar destfile="build/granite-cdi.jar" manifest="build/META-INF/MANIFEST.MF">
-            <fileset dir="classes/cdi">
-                <include name="**"/>
-            </fileset>
-        </jar>
-        <jar destfile="build/granite-beanvalidation.jar" manifest="build/META-INF/MANIFEST.MF">
-            <fileset dir="classes/beanvalidation">
-                <include name="**"/>
-            </fileset>
-        </jar>
-        <jar destfile="build/granite-guice.jar" manifest="build/META-INF/MANIFEST.MF">
-            <fileset dir="classes/guice">
-                <include name="**"/>
-            </fileset>
-        </jar>
-
-    	<!-- Small jar containing classes required by Gas3/GraniteBuilder -->
-    	<jar destfile="build/granite-generator-share.jar" manifest="build/META-INF/MANIFEST.MF">
-            <fileset dir="classes/core">
-                <include name="org/granite/util/ClassUtil.class"/>
-                <include name="org/granite/util/ClassUtil$*.class"/>
-                <include name="org/granite/util/URIUtil.class"/>
-                <include name="org/granite/messaging/amf/io/util/Property.class"/>
-                <include name="org/granite/messaging/amf/io/util/externalizer/Externalizer.class"/>
-                <include name="org/granite/messaging/amf/io/util/externalizer/annotation/**"/>
-                <include name="org/granite/messaging/service/annotations/**"/>
-           	</fileset>
-        	<fileset dir="classes/tide">
-                <include name="org/granite/tide/annotations/**"/>
-        		<include name="org/granite/tide/data/Lazy.class"/>
             </fileset>
         </jar>
     </target>

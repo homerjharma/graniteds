@@ -17,6 +17,7 @@ public class XMap implements Serializable {
     private volatile Map<String, String> bypassParsingXmlMap = new Hashtable<String, String>();
     private volatile OriginalXMap originalXMap = null;
 
+    
     /**
      * An empty and unmodifiable XMap instance.
      */
